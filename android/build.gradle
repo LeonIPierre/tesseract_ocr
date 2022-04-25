@@ -16,6 +16,7 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
 }
 
@@ -40,6 +41,6 @@ android {
 }
 
 dependencies {
-    compileOnly files('libs/tesseract4android-release.aar')
-    implementation fileTree(include: '*.aar', dir: 'libs')
+    //compileOnly files('libs/tesseract4android-release.aar')
+    //implementation fileTree(include: '*.aar', dir: 'libs')
 }
