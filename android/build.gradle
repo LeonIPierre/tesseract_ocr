@@ -27,6 +27,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        minifyEnabled false   
+        shrinkResources false
     }
     lintOptions {
         disable 'InvalidPackage'
