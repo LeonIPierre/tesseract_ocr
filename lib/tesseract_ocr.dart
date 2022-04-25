@@ -15,6 +15,10 @@ class TesseractOcr {
   static Future<String> extractText(String imagePath,
       {String? language}) async {
     assert(await File(imagePath).exists(), true);
+    
+    if (Platform.isAndroid) PathProviderAndroid.registerWith();
+    if (Platform.isIOS) PathProviderIOS.registerWith();
+    
     final String tessData = await _loadTessData();
     final String extractText =
         await _channel.invokeMethod('extractText', <String, dynamic>{
