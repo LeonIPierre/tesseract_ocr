@@ -40,6 +40,6 @@ android {
 }
 
 dependencies {
-    //compileOnly files('libs/tesseract4android-release.aar')
+    compileOnly files('libs/tesseract4android-release.aar')
     implementation fileTree(include: '*.aar', dir: 'libs')
 }
