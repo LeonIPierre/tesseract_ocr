@@ -5,6 +5,8 @@ import 'dart:typed_data';
 
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:path_provider_android/path_provider_android.dart';
+import 'package:path_provider_ios/path_provider_ios.dart';
 import 'package:path/path.dart';
 
 class TesseractOcr {
